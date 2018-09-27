@@ -1,16 +1,6 @@
 package trackingserver;
 
-import java.net.DatagramPacket;
 import java.net.InetAddress;
-
-public interface IMessageStrategy {
-    //first need to evaluate what kind of message
-    //String Execute(String messageType, double bib, String messageReceived);
-    //then message will need to be sent to the correct place
-    void process(String message, InetAddress address, int port);
-    //String sendRaceStart(String toWhere, String message);
-    //String sendUpdate(String toWhere, String bibNumber, String Message);
-}
 
 
 //if Port = 12000 -> message from simulator;
@@ -30,41 +20,62 @@ public interface IMessageStrategy {
  * Messages from the Simulator to the Server
  */
 
-class Hello implements IMessageStrategy {
+public interface IMessageStrategy{
+
+    public void process(String message);
+}
+
+class Hello implements IMessageProcessor {
     @Override
     public void process(String message, InetAddress address, int port) {
-        if (message == "Hello") {
+        String parts[] = message.split(",");
+        if (parts[1] == "Hello") {
             //send client Race, <race name>, <course length in meters>
             //add client to list of observers
             RaceStarted race = new RaceStarted();
             //if(started ==true; )
-
             message = "Race, <race name>, <course length in meters>";
-            InetAddress where = address;
-            int portLocation = port;
-
+            //InetAddress where = address;
+            //int portLocation = port;
             //if simulation is running, then send started, otherwise send, basic message.. simulation not running yet.
-
         }
+    }
+}
+
+
+class Subscribe implements IMessageProcessor{
+    @Override
+    public void process(String message, InetAddress address, int port) {
+
+    }
+}
+
+class Unsubscribe implements IMessageProcessor{
+    @Override
+    public void process(String message, InetAddress address, int port) {
 
     }
 }
 
 
-class RaceStarted implements IMessageStrategy {
+
+
+class RaceStarted implements IMessageProcessor {
     @Override
     public void process(String message, InetAddress address, int port) {
         //when the race starts build info to send to all clients telling them race started
         String parts[] = message.split(",");
         if (parts[1].trim() == "Race") {
-            System.out.println(parts[1].trim() + "," + parts[2].trim() + "," + parts[3]);
+            String type = parts[1];
+            String raceName = parts[2];
+            String raceLength = parts[3];
+            System.out.println(parts[1].trim() + "," + parts[2].trim() + "," +  parts[3]);
         }
-        return;
     }
 }
 
 
-class RegisteredUpdate implements IMessageStrategy{
+class RegisteredUpdate implements IMessageProcessor{
     @Override
     public void process(String message, InetAddress address, int port) {
         //when the race starts build info to send to all clients telling them race started
@@ -76,7 +87,7 @@ class RegisteredUpdate implements IMessageStrategy{
     }
 }
 
-class DidNotStart implements IMessageStrategy {
+class DidNotStart implements IMessageProcessor {
     @Override
     public void process(String message, InetAddress address, int port) {
         //when the race starts build info to send to all clients telling them race started
@@ -87,7 +98,7 @@ class DidNotStart implements IMessageStrategy {
     }
 }
 
-class Started implements  IMessageStrategy{
+class Started implements  IMessageProcessor{
     @Override
     public void process(String message, InetAddress address, int port) {
         //when the race starts build info to send to all clients telling them race started
@@ -95,22 +106,21 @@ class Started implements  IMessageStrategy{
         if (parts[1].trim() == "Started") {
             System.out.println(parts[1].trim() + "," + parts[2].trim());
         }
-        return;
     }
 }
 
-class OnCourse implements IMessageStrategy {
-        @Override
-        public void process(String message, InetAddress address, int port) {
-            //when the race starts build info to send to all clients telling them race started
-            String parts[] = message.split(",");
-            if (parts[1].trim() == "OnCourse") {
-                System.out.println(parts[1].trim() + "," + parts[2].trim() + "," + parts[3].trim() + "," + parts[4].trim());
-            }
+class OnCourse implements IMessageProcessor{
+    @Override
+    public void process(String message, InetAddress address, int port) {
+        //when the race starts build info to send to all clients telling them race started
+        String parts[] = message.split(",");
+        if (parts[1].trim() == "OnCourse") {
+            System.out.println(parts[1].trim() + "," + parts[2].trim() + "," + parts[3].trim() + "," + parts[4].trim());
         }
     }
+}
 
-class DidNotFinish implements IMessageStrategy {
+class DidNotFinish implements IMessageProcessor {
     @Override
     public void process(String message, InetAddress address, int port) {
         //when the race starts build info to send to all clients telling them race started
@@ -121,7 +131,7 @@ class DidNotFinish implements IMessageStrategy {
     }
 }
 
-class Finished implements IMessageStrategy {
+class Finished implements IMessageProcessor {
     @Override
     public void process(String message, InetAddress address, int port) {
         //when the race starts build info to send to all clients telling them race started

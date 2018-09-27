@@ -1,13 +1,11 @@
 
 package trackingserver;
-
 import java.net.InetAddress;
 
 public class Message {
+    private IMessageProcessor messageStrategy;
 
-    private IMessageStrategy messageStrategy;
-
-    public Message(IMessageStrategy messageStrategy){
+    public Message(IMessageProcessor messageStrategy){
         this.messageStrategy = messageStrategy;
     }
 
