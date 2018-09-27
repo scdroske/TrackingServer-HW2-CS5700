@@ -1,10 +1,8 @@
-/**
 
 package trackingserver;
 
+import java.net.InetAddress;
 import java.util.List;
-
-
 
 public class Athlete {
     protected String firstname;
@@ -13,25 +11,26 @@ public class Athlete {
     protected String distancecovered;
     protected boolean started;
     protected boolean finished;
+    protected InetAddress Observer;
 
 
+    List<Client> Observers; //a list of clients observing athletes
+    for(Client.address : Observers){
+    if(Client.address != Observer){
+        Observers += Observer;
 
-    List<Client> Observers;
+    }
 
 
-
-    add.Observer(Client c);
+    public void addObserver(Client c);
     Observers.add(c);
 
     public void StateChange(){
         notify Observer():
         for(Client : Observers){
-            c.update();
+            c.Message();
         }
     }
 }
 
 //will notify observers > send string of data to client using communicator
-
-
-*/

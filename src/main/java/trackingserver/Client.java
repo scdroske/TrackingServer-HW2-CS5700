@@ -1,4 +1,4 @@
-/**
+
 
 package trackingserver;
 
@@ -17,9 +17,5 @@ public class Client {
 }
 
     public void Update(){
-        //build and send message
-        communicator.send(message);
     }
 
-
-**/

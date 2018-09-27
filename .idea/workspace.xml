@@ -53,12 +53,8 @@
       <change beforePath="$PROJECT_DIR$/../../DummyServer.exe.config" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../IMessageProcessor.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../RaceData.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrackingServer/trackingserver/IMessageStrategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrackingServer/trackingserver/TrackingServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrackingServer/trackingserver/TrackingServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trackingserver/IMessageStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trackingserver/IMessageStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trackingserver/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trackingserver/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trackingserver/TrackingServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trackingserver/TrackingServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/trackingserver/Athlete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trackingserver/Athlete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/trackingserver/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trackingserver/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Short Race Simulation.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Simulator.exe" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Simulator.exe.config" beforeDir="false" />
@@ -85,33 +81,33 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="23" />
+          <entry key="java" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="23" />
+          <entry key="JAVA" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="8073" />
+          <entry key="java" value="8335" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8073" />
+          <entry key="JAVA" value="8335" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/trackingserver/TrackingServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+            <state relative-caret-position="187">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -122,10 +118,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/trackingserver/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#217#218#0" expanded="true" />
+                <element signature="e#255#256#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/trackingserver/Athlete.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -146,8 +155,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/trackingserver/Message.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="119">
+              <caret line="7" column="50" lean-forward="true" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -199,21 +208,21 @@
         <option value="$PROJECT_DIR$/src/main/java/IMessageProcessor.java" />
         <option value="$PROJECT_DIR$/src/test/java/CommunicatorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/trackingserver/IMessage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/trackingserver/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/java/trackingserver/Athlete.java" />
         <option value="$PROJECT_DIR$/src/main/java/trackingserver/DummyMessageProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/trackingserver/Started.java" />
         <option value="$PROJECT_DIR$/src/main/java/trackingserver/Message.java" />
         <option value="$PROJECT_DIR$/src/main/java/trackingserver/IMessageStrategy.java" />
         <option value="$PROJECT_DIR$/src/main/java/trackingserver/TrackingServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/trackingserver/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/trackingserver/Athlete.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="344" />
+    <option name="y" value="217" />
+    <option name="width" value="809" />
+    <option name="height" value="750" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -287,7 +296,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538024524380" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538026155914" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -379,15 +388,15 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.23071104" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.23071104" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32923076" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.32923076" />
-      <window_info active="true" anchor="bottom" id="Messages" order="2" visible="true" weight="0.3276923" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.3276923" />
       <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3123077" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.26307693" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.26307693" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -440,16 +449,6 @@
           <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/trackingserver/Athlete.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="36" column="2" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -524,23 +523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/trackingserver/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/trackingserver/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/trackingserver/Communicator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -560,8 +542,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/trackingserver/TrackingServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/trackingserver/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="50" lean-forward="true" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/trackingserver/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#255#256#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/trackingserver/Athlete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
