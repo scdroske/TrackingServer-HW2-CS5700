@@ -18,11 +18,28 @@ public class TrackingServer{
 
             //where the message will be the message type, the InetAddress will be the address of the client and port
 
-            for (clients : observers):
-            communicator.send("Hello", InetAddress.getLocalHost(), client.getLocalPort());
+            Message update = new Message(new RaceStarted()); //this might have to be seperate because its coming from client?
+           // communicator.send(message, InetAddress targetAddress, int targetPort );
+            //now have to build classes that return this info
+
+            update = new Message(new RegisteredUpdate());
+            update = new Message(new DidNotStart());
+
+            update = new Message(new Started());
+
+
+            update = new Message(new OnCourse());
+
+
+            update = new Message(new DidNotFinish());
+
+            update = new Message(new Finished());
+
+
+            //communicator.send("Hello", InetAddress.getLocalHost(), client.getLocalPort());
 
 
 
-            DatagramPacket packet = comm2.getMessage();
+            //DatagramPacket packet = comm2.getMessage();
         }
     }
